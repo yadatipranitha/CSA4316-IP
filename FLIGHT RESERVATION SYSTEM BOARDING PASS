@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding Pass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .boarding-pass {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .passenger-info {
+            margin-bottom: 20px;
+        }
+        .passenger-info p {
+            margin: 5px 0;
+        }
+        .barcode {
+            text-align: center;
+        }
+        .barcode img {
+            width: 80%;
+        }
+        .thank-you {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boarding-pass">
+        <h1>Boarding Pass</h1>
+        <div class="passenger-info">
+            <p><strong>Passenger Name:</strong> John Smith</p>
+            <p><strong>Flight Number:</strong> XYZ123</p>
+            <p><strong>Date:</strong> April 3, 2024</p>
+            <p><strong>Departure:</strong> New York (JFK)</p>
+            <p><strong>Destination:</strong> Los Angeles (LAX)</p>
+            <p><strong>Departure Time:</strong> 12:00 PM</p>
+            <p><strong>Seat:</strong> 23A</p>
+            <p><strong>Gate:</strong> 5</p>
+        </div>
+        <div class="barcode">
+            <img src="barcode-image.jpg" alt="Barcode">
+        </div>
+        <div class="thank-you">
+            <p>Thank you for flying with us!</p>
+        </div>
+    </div>
+</body>
+</html>
