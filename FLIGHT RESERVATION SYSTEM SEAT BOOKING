@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+        }
+        .flight-details {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .seat-selection {
+            margin-bottom: 20px;
+        }
+        .seat-selection label {
+            margin-right: 10px;
+        }
+        .seat-selection input[type="checkbox"] {
+            display: none;
+        }
+        .seat-selection input[type="checkbox"] + label {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border: 1px solid #aaa;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .seat-selection input[type="checkbox"]:checked + label {
+            background-color: #007bff;
+            color: #fff;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flight-details">
+            <h2>Flight Details</h2>
+            <table>
+                <tr>
+                    <th>Flight</th>
+                    <th>Date</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                </tr>
+                <tr>
+                    <td>ABC123</td>
+                    <td>April 5, 2024</td>
+                    <td>New York</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="seat-selection">
+            <h2>Seat Selection</h2>
+            <form action="#" method="post">
+                <input type="checkbox" id="seat1" name="seat[]" value="1">
+                <label for="seat1">1A</label>
+                <input type="checkbox" id="seat2" name="seat[]" value="2">
+                <label for="seat2">1B</label>
+                <!-- Add more seats as needed -->
+                <br>
+                <input type="submit" value="Book Selected Seats">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
